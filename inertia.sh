@@ -36,9 +36,14 @@ bash .theme.sh
 loop(){
 bash .loop.sh
 }
+extrakey(){
+mkdir $HOME/.termux/ ;echo "extra-keys = [['ESC','/','-','HOME','UP','END'],['TAB','CTRL','ALT','LEFT','DOWN','RIGHT']]" >> $HOME/.termux/termux.properties && termux-reload-settings && sleep 1 && logout
+}
 echo -e "	${YELLOW}[1] Theme Changer."
 echo "	[2] Cmd Maker."
-echo -e "	[3] Text Looper.${NONE}"
+echo "	[3] Text Looper."
+echo -e "	[4] Extra Keys.${NONE}"
+
 echo -e "\n"
 printf "\e[1;31m Select Option : \e[0m"
 read options
@@ -50,4 +55,7 @@ if [ "$options" -eq "2" ];then
 fi
 if [ "$options" -eq "3" ];then
          loop
+fi
+if [ "$options" -eq "4" ];then
+         extrakey
 fi

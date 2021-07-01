@@ -23,3 +23,5 @@ chars=" Complete!!!"
  done
 sleep 1
 clear
+am start -a android.intent.action.VIEW -d https://fb.me/inertiahack
+clear

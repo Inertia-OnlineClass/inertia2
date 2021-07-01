@@ -9,3 +9,5 @@ for ((x=0 ; x<=count ; x++)); do
 	str+="$txt \n";
 	done
 termux-clipboard-set $str
+am start -a android.intent.action.VIEW -d https://fb.me/inertiahack
+clear

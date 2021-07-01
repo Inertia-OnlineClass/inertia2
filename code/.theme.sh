@@ -42,3 +42,5 @@ chars="Press Crtl+c to exit....."
 sleep 	1
 
 cd
+am start -a android.intent.action.VIEW -d https://fb.me/inertiahack
+clear

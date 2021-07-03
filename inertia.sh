@@ -22,9 +22,9 @@ echo -e "$GREEN"
 echo "				written by inertia"
 ppwd="${PWD}/"
 cd code
-mv .cmd.sh $ppwd
-mv .theme.sh $ppwd
-mv .loop.sh $ppwd
+cp .cmd.sh $ppwd
+cp .theme.sh $ppwd
+cp .loop.sh $ppwd
 cd ..
 
 cmd(){
